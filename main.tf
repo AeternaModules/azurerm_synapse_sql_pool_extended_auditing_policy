@@ -1,5 +1,5 @@
-resource "azurerm_synapse_sql_pool_extended_auditing_policy" "synapse_sql_pool_extended_auditing_policys" {
-  for_each = var.synapse_sql_pool_extended_auditing_policys
+resource "azurerm_synapse_sql_pool_extended_auditing_policy" "synapse_sql_pool_extended_auditing_policies" {
+  for_each = var.synapse_sql_pool_extended_auditing_policies
 
   sql_pool_id                             = each.value.sql_pool_id
   log_monitoring_enabled                  = each.value.log_monitoring_enabled
